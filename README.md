@@ -1,6 +1,8 @@
 # MFRC522_nested_attack
 Forked from https://github.com/HakonHystad/MFRC522_nested_attack and ported to work on Orange Pi Zero. Did a bunch of code cleanup as well.
 
+Please note that I have not yet managed to make this work on the Orange Pi Zero as I intended. I still keep this for fixes, though, since as far as I can see, the original is no-longer maintained.
+
 [Roy Sigurd Karlsbakk](mailto:roy@karlsbakk.net)
 ---
 mifare nested authentication attack with the MFRC522 reader
