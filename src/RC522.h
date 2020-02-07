@@ -1,3 +1,4 @@
+// vim:ts=4:sw=4:sts=4:et:ai:fdm=marker
 /**************************************************************************************************************
 ***************************************************************************************************************
 **                                                                                                           **
@@ -12,11 +13,11 @@
  * DBG: set to get debug info in stdout
  * WIRE: reset to compile outside of raspberry, for ease of working only
  */
-#define RC522_DBG	1
+#define RC522_DBG	0
 #define RC522_WIRE	0
 
-#ifndef _RC522_H_
-#define _RC522_H_
+#ifndef _RC522_H
+#define _RC522_H
 
 /*#############################################################################################################
 
@@ -32,10 +33,8 @@ Section:                                          ~libs
 
 
 #if RC522_WIRE
-
-#include <wiringPi.h>
-#include <wiringPiSPI.h>
-
+# include <wiringPi.h>
+# include <wiringPiSPI.h>
 #endif
 
 /*#############################################################################################################
@@ -56,11 +55,11 @@ Section:                                          ~literals and defines
  * GND					GND
  *
  */
-// #define RST	5
-// #define CHANNEL 0// CE0
-// #define SPI_SPEED 4000000// Hz (500k-32m)
+#define RST	5
+#define CHANNEL 0 // CE0
+#define SPI_SPEED 4000000 // Hz (500k-32m)
 
-/*
+/* {{{
  * OrangePi Zero   ppin#/gpio#        MFRC522
  * ------------------------------------------------------------
  * Reset              26/11             RST
@@ -71,10 +70,10 @@ Section:                                          ~literals and defines
  * 3.3V                                 Vcc
  * GND                                  GND
  *
- */
-#define RST	11
-#define CHANNEL 0// CE0
-#define SPI_SPEED 4000000// Hz (500k-32m)
+// #define RST	11
+// #define CHANNEL 0// CE0
+// #define SPI_SPEED 4000000// Hz (500k-32m)
+}}} */
 
 
 typedef uint8_t byte;
