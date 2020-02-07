@@ -70,8 +70,8 @@ Section:                                          ~literals and defines
  * GND           6/9/14/20/25/30/34/39  GND
  *
  * }}} */
-#define RST       5
-#define IRQ       6       // Not in use (yet)
+#define RST       5       // Which GPIO to use to reset the module
+#define IRQ       6       // Which GPIO to use as interrupt source (not in use (yet))
 #define CHANNEL   0       // CE0
 #define SPI_SPEED 4000000 // Hz (500k-32m)
 
