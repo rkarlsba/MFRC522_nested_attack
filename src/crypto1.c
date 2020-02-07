@@ -1,3 +1,4 @@
+// vim:ts=4:sw=4:sts=4:et:ai:fdm=marker
 /*  crypto1.c
 
     This program is free software; you can redistribute it and/or
